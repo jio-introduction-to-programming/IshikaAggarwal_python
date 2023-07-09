@@ -12,7 +12,7 @@ def test_add_two_numbers():
 
 def test_subtract():
     assert subtract(9, 11) == -2  
-    assert subtract(-2, -2) == 4 
+    assert subtract(-2, -2) == 0 
     assert subtract(100, 3) == 97 
 
 def test_sum_first_n_natural_numbers():

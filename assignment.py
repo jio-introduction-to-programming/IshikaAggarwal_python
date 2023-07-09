@@ -12,14 +12,14 @@ def add_two_numbers(x, y):
         Task-2 remove the pass statement and return the sum of 
         2 numbers  
     ''' 
-    result = None # write your code here ! 
+    result =  x + y
     return result 
 
 def subtract(x, y):
     '''
         Task-3 subtract y from x and return the result 
     '''
-    result = None # write your code here ! 
+    result = x - y
     return result 
 
 
@@ -29,7 +29,7 @@ def sum_first_n_natural_numbers(n):
     '''
     if n < 1:
         return None 
-    result = None # write your code here 
+    result = (n * (n + 1)/ 2)
     return result 
 
 def divide_x_by_y_float(x, y):
@@ -39,7 +39,7 @@ def divide_x_by_y_float(x, y):
     '''
     if y == 0:
         return None 
-    result = None # replace None with your code 
+    result = x / y
     return result 
 
 def divide_x_by_y_numeric(x, y):
@@ -48,12 +48,12 @@ def divide_x_by_y_numeric(x, y):
     '''
     if y == 0:
         return None 
-    result = None # replace None with your code 
+    result = x // y 
     return result 
 
 def remainder_x_by_y(x, y):
     '''
         Remainder when x is divided by y 
     ''' 
-    result = None # replace None with your code 
+    result = x % y
     return result 

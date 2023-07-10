@@ -1,63 +1,59 @@
-def convert_to_int(x):
+
+def add_one_to_number(x):
     '''
-        Task-1 Convert x to int and return the result 
+        Task-1 Write the code below to add 1 to a number 
+        and remove the pass statement 
     '''
-    result = int(x)
+    result = x + 1
     return result 
 
-def find_max_of_numbers(numbers):
+def add_two_numbers(x, y):
     '''
-        Task-2 Find and return the maximum number from the list numbers
-    '''
-    result = max(numbers)
+        Task-2 remove the pass statement and return the sum of 
+        2 numbers  
+    ''' 
+    result = x + y
     return result 
 
-def get_char_from_num(num):
+def subtract(x, y):
     '''
-        Task-3 Get a character that corresponds to num in Unicode and return the result
+        Task-3 subtract y from x and return the result 
     '''
-    result = chr(num)
+    result = x - y
     return result 
 
-def get_num_from_char(char):
+
+def sum_first_n_natural_numbers(n):
     '''
-        Task-4 Get a number that corresponds to char in Unicode and return the result
+        Natural numbers are 1 -> infinity 
     '''
-    result = ord(char)
+    if n < 1:
+        return None 
+    result = (n *(n + 1))/2
     return result 
 
-def calculate_sum_of_numbers(numbers):
+def divide_x_by_y_float(x, y):
     '''
-        Task-5 Calculate and return the sum of numbers in the list numbers
+        Division by zero is not defined 
+        Return the result of x divided by y as a float 
     '''
-    result = sum(numbers)
+    if y == 0:
+        return None 
+    result = x / y
     return result 
 
-def check_type_of_value(val):
+def divide_x_by_y_numeric(x, y):
     '''
-        Task-6 Check and return the type of val
+        Return the result of x divided by y as a numeric without decimals 
     '''
-    result = type(val)
+    if y == 0:
+        return None 
+    result = x // y
     return result 
 
-def check_any_true_in_list(lst):
+def remainder_x_by_y(x, y):
     '''
-        Task-7 Check if any of the value in the list lst is True
-    '''
-    result = any(lst)
-    return result 
-
-def check_all_true_in_list(lst):
-    '''
-        Task-8 Check if all of the values in the list lst are True
-    '''
-    result = all(lst)
-    return result 
-
-def get_current_time():
-    '''
-        Task-9 Get and return the current time in seconds since the Epoch
-    '''
-    import time
-    result = time.time()
+        Remainder when x is divided by y 
+    ''' 
+    result = x % y
     return result 

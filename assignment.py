@@ -1,59 +1,63 @@
-
-def add_one_to_number(x):
+def convert_to_int(x):
     '''
-        Task-1 Write the code below to add 1 to a number 
-        and remove the pass statement 
+        Task-1 Convert x to int and return the result 
     '''
-    result = x + 1  # write your code here and replace None with the actual value 
+    result = int(x)
     return result 
 
-def add_two_numbers(x, y):
+def find_max_of_numbers(numbers):
     '''
-        Task-2 remove the pass statement and return the sum of 
-        2 numbers  
-    ''' 
-    result =  x + y
+        Task-2 Find and return the maximum number from the list numbers
+    '''
+    result = max(numbers)
     return result 
 
-def subtract(x, y):
+def get_char_from_num(num):
     '''
-        Task-3 subtract y from x and return the result 
+        Task-3 Get a character that corresponds to num in Unicode and return the result
     '''
-    result = x - y
+    result = chr(num)
     return result 
 
-
-def sum_first_n_natural_numbers(n):
+def get_num_from_char(char):
     '''
-        Natural numbers are 1 -> infinity 
+        Task-4 Get a number that corresponds to char in Unicode and return the result
     '''
-    if n < 1:
-        return None 
-    result = (n * (n + 1)/ 2)
+    result = ord(char)
     return result 
 
-def divide_x_by_y_float(x, y):
+def calculate_sum_of_numbers(numbers):
     '''
-        Division by zero is not defined 
-        Return the result of x divided by y as a float 
+        Task-5 Calculate and return the sum of numbers in the list numbers
     '''
-    if y == 0:
-        return None 
-    result = x / y
+    result = sum(numbers)
     return result 
 
-def divide_x_by_y_numeric(x, y):
+def check_type_of_value(val):
     '''
-        Return the result of x divided by y as a numeric without decimals 
+        Task-6 Check and return the type of val
     '''
-    if y == 0:
-        return None 
-    result = x // y 
+    result = type(val)
     return result 
 
-def remainder_x_by_y(x, y):
+def check_any_true_in_list(lst):
     '''
-        Remainder when x is divided by y 
-    ''' 
-    result = x % y
+        Task-7 Check if any of the value in the list lst is True
+    '''
+    result = any(lst)
+    return result 
+
+def check_all_true_in_list(lst):
+    '''
+        Task-8 Check if all of the values in the list lst are True
+    '''
+    result = all(lst)
+    return result 
+
+def get_current_time():
+    '''
+        Task-9 Get and return the current time in seconds since the Epoch
+    '''
+    import time
+    result = time.time()
     return result 

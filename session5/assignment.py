@@ -66,21 +66,18 @@ print(result5)
     
 
 # Problem Solving
-def array(arr):
-    k = int(input("Enter the key integer for a k sized-list: "))
-    a=[]
-    n = int(input("Enter the sequence of numbers: ",))
-    for i in range(0,k):
-        element=int(input())
-        a.append(element)
-    print(a)
-    for x in range(k):
-        c = int(input("Enter the start value: "))
-        d = int(input("Enter the end value: "))
-        a.append(c)
-        a.append(d)
-
-    k=sum(a)
-    print(k)
+n = int(input("Enter the number of elements: "))
+a=[]
+for x in range(n):
+    j=int(input("Enter the value of array: "))
+    a.append(j)
     
-array([])
+k = int(input("Enter the key integer for a k sized-list: "))
+b=[]
+for i in range(k):
+    start = int(input("Enter the start value: "))
+    end = int(input("Enter the end value: "))
+    sum_start_to_end=int(sum(a[start:end+1]))
+    b.append(sum_start_to_end)
+
+print(b)
